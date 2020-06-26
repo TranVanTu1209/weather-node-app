@@ -1,6 +1,9 @@
 const text = document.getElementById('text');
 const weatherInfo = document.getElementById('weather-info');
-weatherInfo.style.display = 'none';
+if (weatherInfo)
+{
+  weatherInfo.style.display = 'none';
+}
 function getWeather(text) {
   if (text)
   {
