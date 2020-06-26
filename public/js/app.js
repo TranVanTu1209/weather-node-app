@@ -29,7 +29,10 @@ function getWeather(text) {
               The temperature feel likes is ${data.feelslike}
             </p>
           `;
-          weatherInfo.style.display = 'block';
+          if (weatherInfo)
+          {
+            weatherInfo.style.display = 'block';
+          }
         }
       });
   } else
