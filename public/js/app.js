@@ -40,9 +40,11 @@ function getWeather(text) {
     alert('Please fill out the text box');
   }
 }
-
-document.querySelector('#get-btn').addEventListener('click', e => {
-  e.preventDefault();
-  getWeather(text.value);
-  text.value = '';
-});
+if (document.querySelector('#get-btn'))
+{
+  document.querySelector('#get-btn').addEventListener('click', e => {
+    e.preventDefault();
+    getWeather(text.value);
+    text.value = '';
+  });
+}
